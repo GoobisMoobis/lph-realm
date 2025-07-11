@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link
+      rel="icon"
+      href="https://cdn.glitch.global/8b644ece-d178-4c28-af05-4da3f16d88f1/IMG_3293.PNG?v=1745335845945"
+    />
+    <title>The BNR</title>
+
+    <!-- meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta content="The BNR" property="og:title" />
+    <meta
+      content="Beacon Nexus Ring"
+      property="og:description"
+    />
+    <meta
+      content="https://lph-realm.glitch.me/businesses/bnr/"
+      property="og:url"
+    />
+    <meta
+      content="https://cdn.glitch.global/8b644ece-d178-4c28-af05-4da3f16d88f1/IMG_3293.PNG?v=1745335845945"
+      property="og:image"
+    />
+    <meta content="#5A5A5A" data-react-helmet="true" name="theme-color" />
+    <meta
+      content="Los Pollos Hermanos Realm Projects"
+      property="og:site_name"
+    />
+
+    <!-- import the webpage's stylesheet -->
+    <link rel="stylesheet" href="/style.css" />
+    <!-- BNR stylesheet -->
+    <link rel="stylesheet" href="/businesses/bnr/style.css" />
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="site-header">
+      <div class="logo-container">
+        <div class="logo">
+          <a href="./"
+            ><img
+              src="https://cdn.glitch.global/8b644ece-d178-4c28-af05-4da3f16d88f1/IMG_3293.PNG?v=1745335845945"
+              alt="Logo"
+          /></a>
+        </div>
+
+        <div>
+          <a href="./"><h1>BNR</h1></a>
+        </div>
+      </div>
+      <nav class="main-nav">
+        <ul>
+          <li><a href="./">Home</a></li>
+        </ul>
+      </nav>
+    </header>
+    <h1>
+      BNR Status: <span style="color: red; text-decoration: underline;">Closed, not built</span>
+    </h1>
+      <script>
+    (() => {
+      let input = '';
+      let timer = null;
+      const target = 'bnrcg';
+      const timeLimit = 3000; // 3 seconds
+
+      window.addEventListener('keydown', (e) => {
+        if (timer === null) {
+          // Start the timer on first key
+          timer = setTimeout(() => {
+            input = '';
+            timer = null;
+          }, timeLimit);
+        }
+
+        if (e.key === 'Enter') {
+          if (input === target) {
+            window.location.href = '/businesses/bnr/bnrcg/';
+          }
+          input = '';
+          clearTimeout(timer);
+          timer = null;
+        } else if (/^[a-zA-Z]$/.test(e.key)) {
+          input += e.key.toLowerCase();
+        } else {
+          // Reset if unexpected key
+          input = '';
+          clearTimeout(timer);
+          timer = null;
+        }
+      });
+    })();
+  </script>
+  </body>
+</html>

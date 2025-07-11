@@ -1,0 +1,24 @@
+rpui:book_giver
+rpui:carved_pumpkin_giver
+rpui:coal_giver coal
+rpui:cobbled_deepslate_giver
+rpui:cobblestone_giver
+rpui:diamond_giver
+rpui:emerald_giver
+rpui:enchanted_golden_apple_giver
+rpui:glass_giver
+rpui:gold_ingot_giver
+rpui:golden_apple_giver
+rpui:golden_carrot_giver
+rpui:ice_giver
+rpui:iron_ingot_giver
+rpui:jack_o_lantern_giver
+rpui:netherite_ingot_giver
+rpui:netherite_scrap_giver
+rpui:obsidian_giver
+rpui:pumpkin_giver
+rpui:redstone_giver
+rpui:shulker_shell_giver
+rpui:spruce_log_giver
+rpui:string_giver
+rpui:writable_book_giver

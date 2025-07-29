@@ -1,5 +1,5 @@
 /*
- * password-lock.js
+ * password-protected.js
  * A simple script to password-protect any HTML page.
  *
  * Usage:
